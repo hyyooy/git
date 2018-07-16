@@ -1,29 +1,12 @@
-https://blog.csdn.net/top_code/article/details/54023136
-https://blog.csdn.net/sanpiao_0527/article/details/79345467
-http://www.cnblogs.com/peterxiao/p/7779188.html https://www.cnblogs.com/zhuxiaojie/p/5836159.html (spring boot xml yml)
-https://blog.csdn.net/ryelqy/article/details/78462094 模板
-
-https://blog.csdn.net/qq_33337504/article/details/77983793 Git
-
-git clone https://github.com/hyyooy/git.git
- vi /etc/hosts
- git push origin master
+https://blog.csdn.net/xuyuzhuang1991/article/details/54143945
  
- https://blog.csdn.net/top_code/article/details/54023136
+https://blog.csdn.net/top_code/article/details/54023136  swagger
 https://blog.csdn.net/sanpiao_0527/article/details/79345467
-http://www.cnblogs.com/peterxiao/p/7779188.html https://www.cnblogs.com/zhuxiaojie/p/5836159.html (spring boot xml yml)
+https://www.cnblogs.com/zhuxiaojie/p/5836159.html (spring boot xml yml)
 https://blog.csdn.net/ryelqy/article/details/78462094 模板
+https://github.com/TFdream/spring-boot-tutorials   （Spring boot）
 
-https://blog.csdn.net/qq_33337504/article/details/77983793 Git
 
-
-https://blog.csdn.net/jackli_git/article/details/72861546
-https://github.com/hyyooy/git
-https://blog.csdn.net/lbb17745169396/article/details/72793650
-
-git clone https://github.com/hyyooy/git.git
-git config --global user.email "hsyooy@gmail.com"
-git config --global user.name  "hyyooy"
 
 mapper 注解   https://blog.csdn.net/xuyuzhuang1991/article/details/54143945
 
@@ -41,44 +24,4 @@ mapper 注解   https://blog.csdn.net/xuyuzhuang1991/article/details/54143945
 		</repository>
 
 	</repositories>
-	
-	1.种模式：直接删除远程仓库的，本地仓库的还是没有删除，可以进行物理删除或者叫手动删除。
-
-git rm -r --cached a/2.txt                    // 删除a目录下的2.txt文件 
-
-git commit -m  "删除a目录下的2.txt文件"  // commit
-
-git push                               
-
-
-
-2. 种模式，先进行本地物理删除，在进行远程仓库的删除。操作如下：
-
-用-r参数删除目录, git rm --cached a.txt 删除的是本地仓库中的文件，且本地工作区的文件会保留且不再与远程仓库发生跟踪关系，如果本地仓库中的文件也要删除则用git rm a.txt
-
-硬盘删除文件后，执行 git status
-
-会提示你仍然需要 git rm <文件> 【同上】
-
-此时如果是要删除大批量文件，这么一个一个命令下去不得累死人啊
-
-其实可以这样（不管之前有没有已经本地物理删除）
-
-执行 $ git rm * -r（记得，cd 到你要删除的目录下。当然 * 可以换成指定目录）
-
-这时删除文件已经进入本地缓存区，
-
-接下来就是正常的提交操作了
-
-$ git add . 
-
-$ git commit -m "clear"
-
-$ git remote add origin git@github.com:hyyooy/git.git
-
-$ git push origin master
-
-git push -u origin master
-
-$ git commit -m "swag.txt"
 

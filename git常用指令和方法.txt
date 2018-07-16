@@ -1,11 +1,17 @@
 查看远程仓库的信息
 git remote show origin
 
+使用vi编辑器编辑hosts文件，etc为路径
+vi /etc/hosts
+
+git clone https://github.com/hyyy/git.git
+git config --global user.email "hsyy@gmail.com"
+git config --global user.name  "hyyy"
 
 git 本地文件修改后，把本地更新到远程
 git status（执行此命令后，modified后面红色字体为修改后需要提交的文件 modified:   swag.txt）
 提醒：git status若出现中文乱码现象，执行git config --global core.quotepath false
-git add swag.txt hyyooy.txt
+git add swag.txt hyyy.txt
 git commit -m "txt"
 git push -u origin master
 
@@ -48,9 +54,6 @@ git clone https://github.com/cs/git.git
 
 添加自己的远程版本库origin
 git remote add origin https://github.com/cs/git.git
-
-使用vi编辑器编辑hosts文件，etc为路径
-vi /etc/hosts
 
 
 初始化一个版本仓库
