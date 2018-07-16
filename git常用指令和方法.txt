@@ -1,6 +1,13 @@
 查看远程仓库的信息
 git remote show origin
 
+
+git 本地文件修改后，把本地更新到远程
+git status（执行此命令后，modified后面红色字体为修改后需要提交的文件 modified:   swag.txt）
+git add swag.txt hyyooy.txt
+git commit -m "txt"
+git push -u origin master
+
 删除远程code 文件夹,本地保留
 git rm --cached -r code
 git commit -m "delete directory"
