@@ -4,7 +4,7 @@ git remote show origin
 
 git 本地文件修改后，把本地更新到远程
 git status（执行此命令后，modified后面红色字体为修改后需要提交的文件 modified:   swag.txt）
-提醒：gitstatus若出现中文乱码现象，执行git config --global core.quotepath false
+提醒：git status若出现中文乱码现象，执行git config --global core.quotepath false
 git add swag.txt hyyooy.txt
 git commit -m "txt"
 git push -u origin master
