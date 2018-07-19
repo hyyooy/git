@@ -15,6 +15,11 @@ git add swag.txt hyyy.txt
 git commit -m "txt"
 git push -u origin master
 
+本地文件修改或删除后同步到远程（添加所有：git add .）
+git status
+git add .
+git commit -m "txt"
+git push -u origin master
 
 fetch更新本地仓库两种方式
 git fetch origin master    //从远程的origin仓库的master分支下载代码到本地的origin master
